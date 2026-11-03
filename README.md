@@ -2,6 +2,8 @@
 
 **Chess Up** é uma demonstração visual responsiva de uma plataforma de xadrez. O projeto reúne, em uma única interface, uma prévia de tabuleiro, exemplos de partidas, cartões de desafios e conteúdos introdutórios sobre as peças.
 
+![Captura da página inicial do Chess Up](imagens/home.webp)
+
 > **Estado atual:** esta entrega é um protótipo estático feito com HTML e CSS. Os elementos da área de jogo são demonstrativos; não há partidas reais nem processamento de jogadas.
 
 ## O problema e a proposta
@@ -16,7 +18,7 @@ A demonstração reúne áreas que poderiam compor uma plataforma de xadrez: tab
 |---|---|
 | Início | Apresentação do Chess Up e atalhos para as seções da página. |
 | Jogar | Tabuleiro ilustrativo, jogadores de exemplo, histórico de movimentos e cartões de modos de jogo. |
-| Desafios | Exemplos de exercícios: Mate em um lance, Garfo de cavalo e Proteja suas peças. |
+| Desafios | Exemplos de exercícios: Mate em um, Garfo de cavalo e Proteja suas peças. |
 | Partidas | Histórico fictício para demonstrar como resultados poderiam ser exibidos. |
 | Aprender | Resumos introdutórios sobre Rei, Dama, Torre, Bispo, Cavalo e Peão. |
 | Sobre mim | Perfil e informações do desenvolvedor apresentados no projeto. |
@@ -58,11 +60,7 @@ O projeto Chess Up foi desenvolvido individualmente por Isac Neves, incluindo a 
 
 ## Captura de tela
 
-A atividade solicita pelo menos uma captura real da página principal. Ela ainda precisa ser adicionada ao repositório. Quando a imagem estiver disponível, salve-a como `imagens/home.png` e inclua no começo do README:
-
-```markdown
-![Tela principal do Chess Up](imagens/home.png)
-```
+A captura real da página inicial, registrada no navegador, está armazenada em `imagens/home.webp` e incorporada ao início deste README.
 
 ## Status do projeto
 
@@ -71,7 +69,7 @@ A atividade solicita pelo menos uma captura real da página principal. Ela ainda
 - [x] Layout responsivo e menu móvel em HTML/CSS.
 - [x] Página de suporte com perguntas e passos de navegação.
 - [x] Documentação inicial do projeto.
-- [ ] Registrar no repositório uma captura de tela real da página inicial.
+- [x] Registrar no repositório uma captura de tela real da página inicial.
 - [ ] Completar a tabela de integrantes com a divisão real das tarefas.
 - [ ] Implementar partidas, movimentos de peças, desafios interativos e armazenamento de resultados (fora do escopo desta demonstração estática).
 
