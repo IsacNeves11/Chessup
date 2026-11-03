@@ -50,16 +50,23 @@ Não é necessário instalar dependências ou configurar um servidor de aplicaç
 
 Os arquivos `home.html`, `sobre.html` e `suporte.html` devem permanecer junto de `style.css`. As imagens `logo-chessup.png` e `avatar.jpg` também precisam ficar na raiz, como estão no repositório.
 
-## Quem fez o quê
+## Equipe e contribuições
 
-A página `sobre.html` identifica **Isac Neves** como responsável pelo perfil apresentado no projeto. A divisão detalhada de tarefas entre todos os integrantes do grupo não está registrada nos arquivos atuais do repositório.
+A divisão de tarefas precisa ser preenchida com os nomes e as contribuições reais de cada integrante do grupo. Essa informação não está registrada nos arquivos atuais, então os campos abaixo devem ser completados pela equipe antes da entrega.
 
-| Integrante | Responsabilidade |
+| Integrante | Responsabilidade / tela desenvolvida |
 |---|---|
-| Isac Neves | Perfil e apresentação do desenvolvedor na página Sobre mim. |
-| Demais integrantes | Preencher com os nomes e as contribuições reais de cada pessoa, conforme a divisão feita pela equipe. |
+| [Nome do integrante 1] | [Descrever a parte desenvolvida] |
+| [Nome do integrante 2] | [Descrever a parte desenvolvida] |
+| [Nome do integrante 3] | [Descrever a parte desenvolvida] |
 
-> Antes da entrega, revisem esta tabela em grupo para registrar os nomes e as responsabilidades de todos os participantes.
+## Captura de tela
+
+A atividade solicita pelo menos uma captura real da página principal. Ela ainda precisa ser adicionada ao repositório. Quando a imagem estiver disponível, salve-a como `imagens/home.png` e inclua no começo do README:
+
+```markdown
+![Tela principal do Chess Up](imagens/home.png)
+```
 
 ## Status do projeto
 
@@ -80,4 +87,4 @@ A página `sobre.html` identifica **Isac Neves** como responsável pelo perfil a
 - O histórico e as estatísticas são exemplos fictícios; não existe salvamento de partidas.
 - Não há conta de usuário, partidas online ou adversário controlado pelo computador.
 
-Consulte a página **Suporte** dentro do site para orientações de navegação.
+Consulte a página [**Suporte**](suporte.html) dentro do site para orientações de navegação. Acesse também a [página inicial](home.html) e a página [Sobre mim](sobre.html).
