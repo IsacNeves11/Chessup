@@ -1215,3 +1215,105 @@ button:disabled{opacity:.48;cursor:not-allowed}
         transform: translateY(-7px) rotate(-45deg);
     }
 }
+
+
+/* PÁGINA DE SUPORTE — CHESS UP */
+.support-page {
+    max-width: 900px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+}
+.support-intro {
+    max-width: 780px;
+    margin-bottom: 36px;
+}
+.support-intro h1 {
+    margin: 8px 0 14px;
+    color: var(--navy);
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.12;
+}
+.support-intro > p {
+    color: var(--gray-500);
+    font-size: 1rem;
+    line-height: 1.65;
+}
+.support-notice {
+    margin-top: 22px;
+    padding: 16px 18px;
+    border-left: 4px solid var(--blue);
+    border-radius: 10px;
+    color: var(--navy) !important;
+    background: var(--gray-50);
+}
+.support-topic {
+    margin-top: 34px;
+}
+.support-topic h2 {
+    margin: 0 0 16px;
+    color: var(--navy);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+}
+.support-faq {
+    margin-bottom: 12px;
+    padding: 14px 18px;
+    border: 1px solid var(--gray-200);
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: var(--shadow-card);
+}
+.support-faq summary {
+    position: relative;
+    padding-right: 26px;
+    color: var(--navy);
+    font-weight: 700;
+    line-height: 1.5;
+    cursor: pointer;
+    list-style: none;
+}
+.support-faq summary::-webkit-details-marker {
+    display: none;
+}
+.support-faq summary::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--blue);
+    font-size: 1.25rem;
+    content: "+";
+}
+.support-faq[open] summary::after {
+    content: "−";
+}
+.support-faq summary:focus-visible {
+    outline: 3px solid #93C5FD;
+    outline-offset: 4px;
+    border-radius: 3px;
+}
+.support-faq ol {
+    margin: 14px 0 4px;
+    padding-left: 24px;
+    color: var(--gray-500);
+    line-height: 1.7;
+}
+.support-faq li {
+    padding-left: 3px;
+    margin-bottom: 7px;
+}
+.support-faq strong {
+    color: var(--navy);
+}
+.support-back {
+    margin-top: 36px;
+}
+@media screen and (max-width: 680px) {
+    .support-page {
+        padding-top: 32px;
+        padding-bottom: 44px;
+    }
+    .support-faq {
+        padding: 13px 14px;
+    }
+}
