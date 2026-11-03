@@ -50,15 +50,11 @@ Não é necessário instalar dependências ou configurar um servidor de aplicaç
 
 Os arquivos `home.html`, `sobre.html` e `suporte.html` devem permanecer junto de `style.css`. As imagens `logo-chessup.png` e `avatar.jpg` também precisam ficar na raiz, como estão no repositório.
 
-## Equipe e contribuições
+## Desenvolvimento
 
-A divisão de tarefas precisa ser preenchida com os nomes e as contribuições reais de cada integrante do grupo. Essa informação não está registrada nos arquivos atuais, então os campos abaixo devem ser completados pela equipe antes da entrega.
+**Desenvolvimento individual:** Isac Neves.
 
-| Integrante | Responsabilidade / tela desenvolvida |
-|---|---|
-| [Nome do integrante 1] | [Descrever a parte desenvolvida] |
-| [Nome do integrante 2] | [Descrever a parte desenvolvida] |
-| [Nome do integrante 3] | [Descrever a parte desenvolvida] |
+O projeto Chess Up foi desenvolvido individualmente por Isac Neves, incluindo a estrutura das páginas em HTML, a estilização em CSS, a responsividade, a navegação entre as áreas e a documentação do protótipo.
 
 ## Captura de tela
 
