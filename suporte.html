@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ajuda e orientações para navegar pela demonstração visual do Chess Up.">
+    <title>Chess Up | Suporte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Navegação principal">
+            <a class="brand" href="home.html" aria-label="Chess Up - Início">
+                <img src="logo-chessup.png" alt="Logo do Chess Up">
+            </a>
+
+            <input class="menu-checkbox" type="checkbox" id="menu-checkbox" aria-label="Abrir menu de navegação">
+            <label class="menu-toggle" for="menu-checkbox" aria-hidden="true"><span></span><span></span><span></span></label>
+            <label class="menu-overlay" for="menu-checkbox" aria-label="Fechar menu"></label>
+
+            <div class="nav-links" id="nav-links">
+                <a class="menu-brand" href="home.html" aria-label="Chess Up - Início">
+                    <img src="logo-chessup.png" alt="Chess Up">
+                </a>
+                <a class="nav-link" href="home.html"><span aria-hidden="true">⌂</span><span>Início</span></a>
+                <a class="nav-link" href="home.html#tabuleiro"><span aria-hidden="true">♟</span><span>Jogar</span></a>
+                <a class="nav-link" href="home.html#problemas"><span aria-hidden="true">▦</span><span>Desafios</span></a>
+                <a class="nav-link" href="home.html#partidas"><span aria-hidden="true">♜</span><span>Partidas</span></a>
+                <a class="nav-link" href="home.html#aprendizado"><span aria-hidden="true">◈</span><span>Aprender</span></a>
+                <a class="nav-link" href="suporte.html" aria-current="page"><span aria-hidden="true">?</span><span>Suporte</span></a>
+                <a class="nav-cta" href="sobre.html"><span>Sobre mim</span><span aria-hidden="true">↗</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="support-page container">
+        <section class="support-intro">
+            <span class="section-label">Central de ajuda</span>
+            <h1>Como usar o Chess Up</h1>
+            <p>Encontre orientações para navegar pelas áreas da demonstração. Escolha uma pergunta para abrir o passo a passo.</p>
+            <p class="support-notice"><strong>Importante:</strong> esta versão do Chess Up é uma demonstração visual feita com HTML e CSS. O tabuleiro, os modos de partida, os desafios e os resultados são exemplos de interface; eles não executam ações de jogo nem salvam dados.</p>
+        </section>
+
+        <section class="support-topic" aria-labelledby="support-navigation">
+            <h2 id="support-navigation">Navegação</h2>
+
+            <details class="support-faq">
+                <summary>Como encontro cada área do Chess Up?</summary>
+                <ol>
+                    <li>Abra a página inicial pelo link <strong>Início</strong>.</li>
+                    <li>No menu superior, selecione <strong>Jogar</strong>, <strong>Desafios</strong>, <strong>Partidas</strong> ou <strong>Aprender</strong>.</li>
+                    <li>A página rola até a seção escolhida. Você também pode usar os links de destaque da página inicial, como <strong>Ver tabuleiro</strong> e <strong>Conhecer desafios</strong>.</li>
+                </ol>
+            </details>
+
+            <details class="support-faq">
+                <summary>Como abro e fecho o menu no celular?</summary>
+                <ol>
+                    <li>Na parte superior da página, toque no ícone com três linhas.</li>
+                    <li>Toque no nome da área que deseja consultar.</li>
+                    <li>Para fechar o menu sem escolher uma área, toque novamente no ícone ou na área escurecida ao lado do menu.</li>
+                </ol>
+            </details>
+
+            <details class="support-faq">
+                <summary>Onde encontro esta página de suporte?</summary>
+                <ol>
+                    <li>Abra o menu de navegação.</li>
+                    <li>Selecione <strong>Suporte</strong>.</li>
+                    <li>Escolha a pergunta relacionada à área que deseja conhecer.</li>
+                </ol>
+            </details>
+        </section>
+
+        <section class="support-topic" aria-labelledby="support-game">
+            <h2 id="support-game">Jogar e tabuleiro</h2>
+
+            <details class="support-faq">
+                <summary>Como vejo o tabuleiro de xadrez?</summary>
+                <ol>
+                    <li>No menu superior, selecione <strong>Jogar</strong>.</li>
+                    <li>Na página inicial, você também pode clicar em <strong>Ver tabuleiro</strong>.</li>
+                    <li>A seção <strong>Tabuleiro demonstrativo</strong> apresenta o tabuleiro, os jogadores de exemplo e um histórico ilustrativo de movimentos.</li>
+                </ol>
+            </details>
+
+            <details class="support-faq">
+                <summary>Como movo uma peça no tabuleiro?</summary>
+                <ol>
+                    <li>Observe o tabuleiro e as peças exibidas como exemplo.</li>
+                    <li>Nesta versão, não é possível selecionar ou mover peças: o tabuleiro é uma imagem demonstrativa construída com elementos HTML e CSS.</li>
+                    <li>As casas destacadas e os movimentos mostrados servem apenas para ilustrar como uma partida poderá aparecer no projeto.</li>
+                </ol>
+            </details>
+
+            <details class="support-faq">
+                <summary>Como escolho entre Rápida, Blitz e Bullet?</summary>
+                <ol>
+                    <li>Na área <strong>Jogar</strong>, localize o painel <strong>Escolha seu ritmo</strong>.</li>
+                    <li>Observe os cartões <strong>Rápida</strong>, <strong>Blitz</strong> e <strong>Bullet</strong> e os tempos apresentados.</li>
+                    <li>Essas opções são ilustrativas: nesta versão, selecionar um modo não inicia uma partida.</li>
+                </ol>
+            </details>
+
+            <details class="support-faq">
+                <summary>Os controles Desfazer jogada, Virar tabuleiro e Exportar PGN funcionam?</summary>
+                <ol>
+                    <li>Esses controles aparecem abaixo do tabuleiro para demonstrar uma possível interface de jogo.</li>
+                    <li>Nesta versão estática, eles não executam ações, pois não há partidas ou movimentos registrados.</li>
+                </ol>
+            </details>
+        </section>
+
+        <section class="support-topic" aria-labelledby="support-challenges">
+            <h2 id="support-challenges">Desafios</h2>
+
+            <details class="support-faq">
+                <summary>Como consulto os desafios de xadrez?</summary>
+                <ol>
+                    <li>No menu superior, selecione <strong>Desafios</strong> ou clique em <strong>Conhecer desafios</strong> na página inicial.</li>
+                    <li>Leia os cartões <strong>Mate em um lance</strong>, <strong>Garfo de cavalo</strong> e <strong>Proteja suas peças</strong>.</li>
+                    <li>Os cartões apresentam ideias de exercícios. Resolver desafios e conferir respostas ainda não está disponível nesta demonstração.</li>
+                </ol>
+            </details>
+        </section>
+
+        <section class="support-topic" aria-labelledby="support-history">
+            <h2 id="support-history">Partidas</h2>
+
+            <details class="support-faq">
+                <summary>Como consulto o histórico de partidas?</summary>
+                <ol>
+                    <li>No menu superior, selecione <strong>Partidas</strong>.</li>
+                    <li>Consulte a área <strong>Exemplo de histórico</strong> e os cartões de resultados recentes.</li>
+                    <li>Os nomes, resultados e quantidades de lances são dados fictícios para demonstrar o layout. O site não registra partidas reais.</li>
+                </ol>
+            </details>
+        </section>
+
+        <section class="support-topic" aria-labelledby="support-learning">
+            <h2 id="support-learning">Aprender</h2>
+
+            <details class="support-faq">
+                <summary>Onde vejo como as peças se movimentam?</summary>
+                <ol>
+                    <li>No menu superior, selecione <strong>Aprender</strong>.</li>
+                    <li>Na seção <strong>Como as peças se movimentam</strong>, consulte os cartões de Rei, Dama, Torre, Bispo, Cavalo e Peão.</li>
+                    <li>Cada cartão apresenta um resumo introdutório do movimento da peça.</li>
+                </ol>
+            </details>
+        </section>
+
+        <section class="support-topic" aria-labelledby="support-about">
+            <h2 id="support-about">Sobre mim</h2>
+
+            <details class="support-faq">
+                <summary>Como conheço o responsável pelo projeto?</summary>
+                <ol>
+                    <li>Abra o menu de navegação.</li>
+                    <li>Selecione <strong>Sobre mim</strong>.</li>
+                    <li>A página apresenta o perfil, interesses e links relacionados ao desenvolvedor.</li>
+                    <li>Para voltar ao projeto, selecione <strong>Início</strong> no menu.</li>
+                </ol>
+            </details>
+        </section>
+
+        <p class="support-back"><a class="button button-primary" href="home.html">Voltar para o Chess Up</a></p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner container">
+            <a class="brand brand-footer" href="home.html" aria-label="Chess Up - Início"><img src="logo-chessup.png" alt="Logo do Chess Up"></a>
+            <p>Chess Up — xadrez e tecnologia.</p>
+            <a class="footer-github" href="https://github.com/IsacNeves11/Chessup" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+    </footer>
+</body>
+</html>
