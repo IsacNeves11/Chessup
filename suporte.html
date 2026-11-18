@@ -38,7 +38,7 @@
             <span class="section-label">Central de ajuda</span>
             <h1>Como usar o Chess Up</h1>
             <p>Encontre orientações para navegar pelas áreas da demonstração. Escolha uma pergunta para abrir o passo a passo.</p>
-            <p class="support-notice"><strong>Importante:</strong> esta versão do Chess Up é uma demonstração visual feita com HTML e CSS. O tabuleiro, os modos de partida, os desafios e os resultados são exemplos de interface; eles não executam ações de jogo nem salvam dados.</p>
+            <p class="support-notice"><strong>Importante:</strong> o tabuleiro já permite partidas locais com movimentos legais, relógio, histórico e exportação PGN. O modo contra computador usa uma estratégia básica. Desafios e histórico geral ainda são demonstrativos; partidas não são salvas após atualizar a página.</p>
         </section>
 
         <section class="support-topic" aria-labelledby="support-navigation">
@@ -88,8 +88,9 @@
                 <summary>Como movo uma peça no tabuleiro?</summary>
                 <ol>
                     <li>Observe o tabuleiro e as peças exibidas como exemplo.</li>
-                    <li>Nesta versão, não é possível selecionar ou mover peças: o tabuleiro é uma imagem demonstrativa construída com elementos HTML e CSS.</li>
-                    <li>As casas destacadas e os movimentos mostrados servem apenas para ilustrar como uma partida poderá aparecer no projeto.</li>
+                    <li>Clique em uma peça da sua cor. As casas destacadas mostram os destinos legais disponíveis.</li>
+                    <li>Clique em uma casa destacada para realizar o movimento. O Chess Up impede jogadas que não seguem as regras do xadrez.</li>
+                    <li>Quando um peão chega à última fileira, ele é promovido automaticamente a dama.</li>
                 </ol>
             </details>
 
@@ -97,16 +98,28 @@
                 <summary>Como escolho entre Rápida, Blitz e Bullet?</summary>
                 <ol>
                     <li>Na área <strong>Jogar</strong>, localize o painel <strong>Escolha seu ritmo</strong>.</li>
-                    <li>Observe os cartões <strong>Rápida</strong>, <strong>Blitz</strong> e <strong>Bullet</strong> e os tempos apresentados.</li>
-                    <li>Essas opções são ilustrativas: nesta versão, selecionar um modo não inicia uma partida.</li>
+                    <li>Clique em <strong>Rápida</strong> (10 minutos), <strong>Blitz</strong> (5 minutos) ou <strong>Bullet</strong> (1 minuto).</li>
+                    <li>Ao escolher um ritmo, o Chess Up inicia uma nova partida e reinicia os dois relógios.</li>
+                    <li>O relógio começa a contar depois que a primeira jogada é realizada.</li>
                 </ol>
             </details>
 
             <details class="support-faq">
                 <summary>Os controles Desfazer jogada, Virar tabuleiro e Exportar PGN funcionam?</summary>
                 <ol>
-                    <li>Esses controles aparecem abaixo do tabuleiro para demonstrar uma possível interface de jogo.</li>
-                    <li>Nesta versão estática, eles não executam ações, pois não há partidas ou movimentos registrados.</li>
+                    <li>Clique em <strong>Desfazer jogada</strong> para voltar um lance. No modo contra computador, o Chess Up desfaz também a resposta do computador.</li>
+                    <li>Clique em <strong>Virar tabuleiro</strong> para trocar a orientação das peças e das coordenadas.</li>
+                    <li>Clique em <strong>Exportar PGN</strong> para baixar a partida em um arquivo que pode ser aberto em programas de xadrez.</li>
+                    <li>Clique em <strong>Nova partida</strong> para reiniciar o tabuleiro e os relógios.</li>
+                </ol>
+            </details>
+
+            <details class="support-faq">
+                <summary>Como jogo contra o computador?</summary>
+                <ol>
+                    <li>No painel <strong>Formato de partida</strong>, selecione <strong>Contra computador</strong>.</li>
+                    <li>Você joga com as peças brancas e o computador responde com as peças pretas.</li>
+                    <li>O adversário usa uma estratégia básica; não há seleção de dificuldade nesta versão.</li>
                 </ol>
             </details>
         </section>
