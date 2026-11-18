@@ -84,7 +84,7 @@ function updateClock() {
 }
 
 function startClock() {
-    if (clockStarted || isFinished()) return;
+    if (isFinished() || clockInterval !== null) return;
 
     clockStarted = true;
     clockInterval = window.setInterval(function () {
@@ -311,7 +311,7 @@ function updateStatus() {
 
 function updateUndoButton() {
     if (undoButton) {
-        undoButton.disabled = chess.history().length === 0;
+        undoButton.disabled = chess.history().length === 0 || Boolean(timeoutWinner);
     }
 }
 
@@ -466,6 +466,11 @@ function resetGame() {
 }
 
 function undoMove() {
+    if (timeoutWinner) {
+        if (noteElement) noteElement.textContent = "O tempo acabou. Inicie uma nova partida para jogar novamente.";
+        return;
+    }
+
     if (computerTimeout !== null) {
         window.clearTimeout(computerTimeout);
         computerTimeout = null;
@@ -489,6 +494,7 @@ function undoMove() {
     legalMoves = [];
     const history = chess.history({ verbose: true });
     lastMove = history.length ? history[history.length - 1] : null;
+    if (clockStarted && !isFinished()) startClock();
     render();
 }
 
