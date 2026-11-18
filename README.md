@@ -1,16 +1,16 @@
 # Chess Up
 
-**Chess Up** é uma demonstração visual responsiva de uma plataforma de xadrez. O projeto reúne, em uma única interface, uma prévia de tabuleiro, exemplos de partidas, cartões de desafios e conteúdos introdutórios sobre as peças.
+**Chess Up** é um site responsivo para aprender e praticar xadrez. O projeto reúne uma área de jogo local com validação de movimentos, relógio, histórico e exportação PGN, além de conteúdos introdutórios e desafios demonstrativos.
 
 ![Captura da página inicial do Chess Up](imagens/home.webp)
 
-> **Estado atual:** esta entrega é um protótipo estático feito com HTML e CSS. Os elementos da área de jogo são demonstrativos; não há partidas reais nem processamento de jogadas.
+> **Estado atual:** o tabuleiro permite partidas locais com regras de xadrez validadas. O modo contra computador usa uma estratégia básica. Não há contas, partidas on-line ou salvamento permanente.
 
 ## O problema e a proposta
 
 Quem está começando no xadrez pode precisar de um espaço simples para conhecer a interface de uma plataforma, visualizar um tabuleiro e encontrar conteúdos introdutórios. O Chess Up apresenta essa proposta em uma página organizada e adaptável a diferentes tamanhos de tela.
 
-A demonstração reúne áreas que poderiam compor uma plataforma de xadrez: tabuleiro, modos de partida, desafios, histórico e aprendizado. Nesta versão, essas áreas servem para apresentar o conceito e o visual do produto, não para executar partidas ou armazenar dados.
+O Chess Up combina uma partida local funcional com áreas de consulta e demonstração. As partidas podem ser jogadas por duas pessoas no mesmo dispositivo ou contra um computador básico. Os desafios e os cartões de histórico geral ainda são exemplos visuais.
 
 ## Telas e áreas
 
@@ -27,12 +27,13 @@ A demonstração reúne áreas que poderiam compor uma plataforma de xadrez: tab
 ## Tecnologias
 
 - **HTML5:** estrutura das páginas, conteúdo semântico e elementos nativos `<details>` / `<summary>` na página de suporte.
-- **CSS3:** identidade visual, layout, responsividade, menu móvel e abertura/fechamento visual do menu por meio de checkbox.
-- **JavaScript:** não é utilizado nesta versão.
+- **CSS3:** identidade visual, layout responsivo, menu móvel e estilos da área de jogo.
+- **JavaScript:** interação do tabuleiro, seleção de peças, relógios, histórico, controles e exportação de partidas.
+- **chess.js 1.4.0:** validação das regras e geração de movimentos legais; carregada pelo CDN do jsDelivr.
 
 ## Como executar o projeto
 
-Não é necessário instalar dependências ou configurar um servidor de aplicação.
+Não é necessário instalar dependências ou configurar um servidor de aplicação. É necessário estar conectado à internet para carregar a biblioteca chess.js pelo CDN.
 
 1. Clone o repositório:
 
@@ -50,7 +51,7 @@ Não é necessário instalar dependências ou configurar um servidor de aplicaç
 
 4. Para desenvolvimento, também é possível abrir a pasta no Visual Studio Code e iniciar o **Live Server** pelo arquivo `index.html` ou `home.html`.
 
-Os arquivos `home.html`, `sobre.html` e `suporte.html` devem permanecer junto de `style.css`. As imagens `logo-chessup.png` e `avatar.jpg` também precisam ficar na raiz, como estão no repositório.
+Os arquivos `home.html`, `sobre.html`, `suporte.html`, `style.css` e `script.js` devem permanecer na raiz. As imagens `logo-chessup.png` e `avatar.jpg` também precisam ficar na raiz, como estão no repositório.
 
 ## Desenvolvimento
 
@@ -64,21 +65,27 @@ A captura real da página inicial, registrada no navegador, está armazenada em 
 
 ## Status do projeto
 
-- [x] Página inicial com apresentação e áreas demonstrativas.
+- [x] Página inicial com apresentação e áreas de xadrez.
+- [x] Tabuleiro interativo com validação de movimentos legais.
+- [x] Relógios Rápida (10 min), Blitz (5 min) e Bullet (1 min).
+- [x] Partida local para dois jogadores e modo contra computador básico.
+- [x] Desfazer jogada, virar tabuleiro e exportar partida em PGN.
 - [x] Página Sobre mim.
 - [x] Layout responsivo e menu móvel em HTML/CSS.
 - [x] Página de suporte com perguntas e passos de navegação.
 - [x] Documentação inicial do projeto.
 - [x] Registrar no repositório uma captura de tela real da página inicial.
 - [ ] Completar a tabela de integrantes com a divisão real das tarefas.
-- [ ] Implementar partidas, movimentos de peças, desafios interativos e armazenamento de resultados (fora do escopo desta demonstração estática).
+- [ ] Tornar os desafios interativos e avaliar as respostas.
+- [ ] Criar contas e salvar histórico de partidas.
+- [ ] Implementar partidas on-line e um adversário com níveis de dificuldade.
 
 ## Limitações desta versão
 
-- O tabuleiro e as peças não permitem realizar movimentos.
-- Os controles de jogo, opções de modo e formato de partida são apenas elementos visuais.
-- Desafios não podem ser respondidos ou avaliados.
-- O histórico e as estatísticas são exemplos fictícios; não existe salvamento de partidas.
-- Não há conta de usuário, partidas online ou adversário controlado pelo computador.
+- As partidas são locais e acontecem no mesmo dispositivo; não há modo on-line.
+- O adversário do computador usa uma estratégia simples e não oferece níveis de dificuldade.
+- O relógio começa a contar após a primeira jogada.
+- O estado da partida não é salvo no servidor e é perdido ao atualizar a página.
+- Os cartões de desafios e o histórico geral continuam sendo exemplos demonstrativos; não há avaliação de respostas nem estatísticas pessoais.
 
 Consulte a página [**Suporte**](suporte.html) dentro do site para orientações de navegação. Acesse também a [página inicial](home.html) e a página [Sobre mim](sobre.html).
