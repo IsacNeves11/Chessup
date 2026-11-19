@@ -17,7 +17,7 @@ O Chess Up combina uma partida local funcional com áreas de consulta e demonstr
 | Tela ou área | O que apresenta |
 |---|---|
 | Início | Apresentação do Chess Up e atalhos para as seções da página. |
-| Jogar | Tabuleiro ilustrativo, jogadores de exemplo, histórico de movimentos e cartões de modos de jogo. |
+| Jogar | Tabuleiro interativo, relógio, histórico de movimentos, modos de jogo e opção contra computador. |
 | Desafios | Exemplos de exercícios: Mate em um, Garfo de cavalo e Proteja suas peças. |
 | Partidas | Histórico fictício para demonstrar como resultados poderiam ser exibidos. |
 | Aprender | Resumos introdutórios sobre Rei, Dama, Torre, Bispo, Cavalo e Peão. |
@@ -47,11 +47,11 @@ Não é necessário instalar dependências ou configurar um servidor de aplicaç
    cd Chessup
    ```
 
-3. Abra o arquivo `index.html` no navegador. Ele redireciona para `index.html`.
+3. Abra o arquivo `index.html` no navegador. Esse arquivo abre diretamente a página inicial do projeto.
 
-4. Para desenvolvimento, também é possível abrir a pasta no Visual Studio Code e iniciar o **Live Server** pelo arquivo `index.html` ou `index.html`.
+4. Para desenvolvimento, também é possível abrir a pasta no Visual Studio Code e iniciar o **Live Server** pelo arquivo `index.html`.
 
-Os arquivos `index.html`, `sobre.html`, `suporte.html`, `style.css` e `script.js` devem permanecer na raiz. As imagens `logo-chessup.png` e `avatar.jpg` também precisam ficar na raiz, como estão no repositório.
+Os arquivos `index.html`, `sobre.html`, `suporte.html`, `style.css` e `script.js` ficam na raiz do projeto. Os arquivos visuais — `logo-chessup.png`, `avatar.jpg`, `favicon.svg` e a captura `home.webp` — ficam organizados dentro da pasta `imagens/`.
 
 ## Desenvolvimento
 
