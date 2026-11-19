@@ -47,11 +47,11 @@ Não é necessário instalar dependências ou configurar um servidor de aplicaç
    cd Chessup
    ```
 
-3. Abra o arquivo `index.html` no navegador. Ele redireciona para `home.html`.
+3. Abra o arquivo `index.html` no navegador. Ele redireciona para `index.html`.
 
-4. Para desenvolvimento, também é possível abrir a pasta no Visual Studio Code e iniciar o **Live Server** pelo arquivo `index.html` ou `home.html`.
+4. Para desenvolvimento, também é possível abrir a pasta no Visual Studio Code e iniciar o **Live Server** pelo arquivo `index.html` ou `index.html`.
 
-Os arquivos `home.html`, `sobre.html`, `suporte.html`, `style.css` e `script.js` devem permanecer na raiz. As imagens `logo-chessup.png` e `avatar.jpg` também precisam ficar na raiz, como estão no repositório.
+Os arquivos `index.html`, `sobre.html`, `suporte.html`, `style.css` e `script.js` devem permanecer na raiz. As imagens `logo-chessup.png` e `avatar.jpg` também precisam ficar na raiz, como estão no repositório.
 
 ## Desenvolvimento
 
@@ -88,4 +88,4 @@ A captura real da página inicial, registrada no navegador, está armazenada em 
 - O estado da partida não é salvo no servidor e é perdido ao atualizar a página.
 - Os cartões de desafios e o histórico geral continuam sendo exemplos demonstrativos; não há avaliação de respostas nem estatísticas pessoais.
 
-Consulte a página [**Suporte**](suporte.html) dentro do site para orientações de navegação. Acesse também a [página inicial](home.html) e a página [Sobre mim](sobre.html).
+Consulte a página [**Suporte**](suporte.html) dentro do site para orientações de navegação. Acesse também a [página inicial](index.html) e a página [Sobre mim](sobre.html).
